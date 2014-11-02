@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- 
+2014-07-07 JAW V6.1.2 JavaScript adjusted for epub format.
+2014-03-18 JAY V6.1.1 Including more CSS.
+2014-02-27 JAY V6.1.0 Closer to epub format.
+2013-06-23 JAY V6.0.0 Converting to notebook template from V5.
+2005-07-10 Improved file structures.
+2005-05-15 Added author subject.
+2005-03-20 Added hyphens to improve keywords.
+2004-11-21 Edited prefatory material.
+2004-11-20 Fixed ELEMENT metadata error and added link to the template.
+2004-11-13 Added localization, fixed ELEMENT metadata error.
+2002-09-25 Added preface title.
+2001-11-15 Added XML elements.
+-->
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <title>AVATAR BIBLIO</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  </head>
+  <body>
+	<h1><a id="title" href="index.html#title">Standard Project</a></h1>
+	<ul class="protocol"><li>
+This is the literature cited throughout the rest of the project 
+notebook. 
+Since the notebook is the equivalent of a published book or article, 
+think of it as the citation entry. 
+It is kept here in the bibliography section in date order (with a 
+author letter and number code to resolve duplicate dates) by author by 
+title. 
+The viewing dates will give further clues to the user as to how new 
+the references are. 
+Monthly, there will be a pass made to restore numerical order using 
+a bubble sort. 
+The bubble sort is being used as, excepting new small projects, the 
+bibliography is already in mostly sort order with the out of sort 
+material at the end of the file.
+The major subject classification can be found in the web linkage 
+of the title (Title_w/link-to-physical-site) to an
+electronic site for recording the storage of the physical document.
+The detailed classification is ordinarily maintained in the 
+Classifications and Suppliers section, will be added after the 
+comments, and will have a web linkage 
+(Detailed-classification_w/link-to-equip) to the Classifications and 
+Suppliers section.
+</li><li>
+Subject by Author by Title - The literature is actually stored by 
+<a href="WWW/index.html#contents">major subject</a> 
+library by author by title (with article and 
+preposition suppression). 
+The reference citation will be in the bibliographic index for that 
+subject with a two-way link by the citation date to individual notebook 
+bibliographies.
+For example:
+	<ul><li>
+A journal article useful to the "The Keeping of the Scholarly Notebook"
+project and on philosophy will have the article stored in the PHILOSOPHY
+capability (if a physical copy) or in the PHILOSOPHY Bibliography / author-code
+/ short-title directory (if an electronic copy). 
+	</li><li>
+The article citation will be in the PHILOSOPHY bibliographic index
+by author by title showing citation date (at a minimum). 
+	</li><li>
+The citation will be crosslinked by citation date between the PHILOSOPHY 
+bibliographic index and the "The Keeping of the Scientific Notebook" 
+bibliographic index. This gives a citation index in the PHILOSOPHY 
+bibliography. 
+	</li></ul>
+Each reference will be kept in a
+separate file: the major subject bibliographic index and the
+individual notebook bibliographic index. This allows the new citations to be
+added in date order at the end. A new title will need to be
+inserted in the major subject bibliographic index author / title list and a
+new author will need to be inserted in the author lists. 
+</li><li>
+Detailed Subject by Title - Much of the literature would have 
+been cited in the 
+<a href="../equip/index.html#begin">PERSISTENT OBJECTS</a>
+section in a detailed alphabetic or hierarchical subject 
+classification.
+A new citation will need to be inserted in detailed subject / title 
+order in equipment.
+A new subject will need to be inserted in the existing subject 
+classification in equipment. 
+The citation will have a two-way link to the bibliography by the 
+citation date and from the bibliographic index by the detailed 
+classification.
+</li><li>
+Author by Title by Date - The author order will appear in the 
+<a href="WWW/biblio/catalog/equip/index.html#begin">
+Catalog of Books</a> with the link to the author individual entries 
+suborganized by title. 
+The new authors or titles will need to be inserted both here as well 
+as in the main subject bibliographic index. 
+The author / title lists will have a two-way link to the main subject 
+bibliographic index above by the title in the catalog and author in 
+the main subject bibliographic index. 
+The catalog will also have purchasing sources, printing history, 
+citations to works (which are not stored in this system) referencing 
+this work and commentary on the author. 
+</li><li>
+[This assumes you are at public_html/"classification"/biblio.]
+<br />grep "classification" ~/CATALOG/*.html &gt; catalog.txt
+<br />ls -lrtgo */* &gt; directory.txt
+<br />[You get to track down uncataloged books on the shelves yourself.]
+</li><li>
+For the creation of new documents, use the bibliography
+<a href="tmpl.html#begin">template</a>.
+</li></ul>
+<ul class="nav"><li>
+<a href="../index.html#title">Table of Contents</a>
+	</li><li>
+<a href="../preface.html#title">The Preface</a>
+	</li><li>
+<a href="../intro.html#title">The Introduction</a>
+	</li><li>
+<a href="../equip/index.html#title">The Equipment</a>
+	</li><li>
+<a href="../conclude.html#title">Conclusions</a>
+	</li><li>
+<a href="tmpl.html#title">Add a New Reference Template</a>
+	</li><li>
+<a href="#YEAR">YEAR</a>
+	<!--insert type="year"-->
+</li></ul>
+	<h1><a id="begin" href="index.html#begin">The Bibliography of Sources Used</a></h1>
+	<div class="bibliography">
+<p>
+When I was about 12, Dad and I had gone up to Omak and had visited my 
+Grandma Perry. 
+On this trip I noticed that there were some books on a shelf in the 
+Sun Room of her house. 
+It turned out that they were books that had belonged 
+to my dad and to my great grandmother Maude. 
+I was given four of them: 
+Hereward the Rake that ggm Maude had written her name in and at the end when 
+she had read the book in 1947. 
+(She died at 96 a year later of a kidney infection. 
+It was said that she hated hospitals and wouldn't go to get the 
+sulfa drug that would have cured her.) 
+There was also two from the Ted Scott 
+flying series by FW Dixon, Over the Ocean to Paris and Danger Trails of the 
+Sky. 
+The fourth book was Two Young Crusoes by MW Phillips. 
+It was the story of a couple of boys camping on an island in a river 
+for the summer, gathering pearls from freshwater clams. 
+All four of these books have influenced my life heavily: 
+fight to the bitter end because my ideas will win where I will not, 
+stick with my base beliefs and be generous because anything else will 
+destroy my beliefs, 
+and last - live a life on a simple basis. 
+It is fun and profitable to my spirit.
+</p><p>
+Dad wasn't too happy about this because of what happened when I insisted on reading 
+them in the car on the way home. 
+I was car sick until Wenachee before he made me put them away. 
+</p><p>
+My memory is faulty; keep a copy of every book and article I read.
+30,000 paper volumes is too hard to move; go for digital copies.
+Three types of materials are envisioned to be kept track of by a 
+bibliography. 
+	There is the usual book/report/article with author and title perhaps 
+	distiguished by edition.
+		The minor error corrections from printing to printing are not 
+		usually of interest.
+		It is usually expected that there are a lot of copies out in the 
+		world.
+		Rarely there is a book that is well known by title but the 
+		author is unknown and anonymous will be used for the author.
+	There is the journal or serial with publisher/society/compiler and title 
+	with notes kept on the holdings by volume and issue.
+		It is expected that individual articles are kept by author and 
+		title and linked to the journal.
+		Again it is expected that there are a lot of copies out in the 
+		world.
+	Rarely there is a single copy manuscript perhaps consisting of multiple 
+	articles.
+		This book will be treated as a single issue journal with the 
+		compiler name of anonymous.
+		Expect that such manuscripts will be in the Library of History 
+		especially if they are of diverse classification, otherwise 
+		they will be in a specific library such as the Library of 
+		Religion.
+</p><p>
+Three types of documents will be kept here. 
+The first is the normal material for the Bibliography Library, those 
+books that are on how to keep a bibliography, books, equipment, glossaries,
+plans, and other files/directories unique to the root notebook. 
+	These are suitable for the root bibliography.
+The second is a special file to open access news and journals.
+The third is the soft link that leads to each of the capabilities (libraries).
+	The Capability is being treated as the author and each library 
+	soft link is to the the library itself  .
+		The configuration files for the libraries themselves have been
+		transferred to the plan. 
+(The configuration files are created when <code>newproject</code> creates
+the library.)
+	This complication is needed because although the libraries should 
+	be listed as notebooks in the Bibliography section rather than 
+	from the root notebook, but for convenience, this is not true.
+		Likewise instead of having the classification of the libraries 
+		in the root table of contents, the classification should be in 
+		the Equipment and Classification section. 
+		Also likewise, the little writeup on each library should be in 
+		the Abstract or Introduction section of that library.
+</p>
+<dl class="inlineprotocol">
+<dt><!-- term --><a id="date-code">Date-ac-code_w/name-link</a>
+<!-- /term --></dt> 
+	<dd><!-- author -->
+    <!-- file dir="author-code" -->Author-w/link-to-catalog<!-- /file --><!-- /author -->.
+	<!-- Biblio:title subject="library-name" -->
+    <!-- file dir="short-title" -->Title-w/link-to-physical-site<!-- /file --> 
+	<!-- /Biblio:title -->. </dd> 
+	<dd><!-- viewed -->Viewed-date-w/link-to-biblio<!-- /viewed -->.  
+	<!-- Biblio:comment -->Comments<!-- /Biblio:comment -->. </dd> 
+	<dd><!-- index -->Detailed-classification-w/link-to-equip<!-- /index -->. 
+	</dd> 
+</dl> 
+<!-- 
+#Do the below from the main machine and not the flash drive. 
+#Insert between pre tags.
+ls -1rt #This gives an author only listing in date added order
+ls -1rt */* 
+-->
+<dl><!-- sort="forward" -->
+    <dt class="indextab">
+<a id="YEAR" href="index.html#YEAR">YEAR</a>
+    </dt><dd></dd>
+<!--insert type="ref"-->
+    <dt><a href="Capability/">Capability</a><dt>
+        <dd></dd>
+    <dt><a href="catalog/woodsjay/index.html">Woods, Jay</a><dt>
+        <dd><ul>
+    <li><a name="19980403w1">1998 04 03 w1
+        <br>The <a href="listserv/">Listserver Notes</a>.
+        <br>Viewed 1998 04 03.  This is the listserver notes on how to 
+        subscribe and unsubscribe to each list.</li>
+    <li><a name="19980402w1">1998 04 02 w1
+        <br>The Book <a href="catalog/">Catalog</a>.
+        <br>Viewed 1998 04 03.  This is the author list including items 
+        on order or wanted.</li>
+    <li><a name="19980402w2">1998 04 02 w2
+        <br>The <a href="geology.html">Geology Library Defaults</a>.
+        <br>Viewed 199804 02.  This is the defaults used in creating the 
+        Geology Library notebook.</li>
+    <li><a name="19980327w1">1998 03 27 w1
+        <br>The <a href="radiks/">Radiks Notes</a>.
+        <br>Viewed 1998 04 03.  This is the notes on using radiks as an 
+        ISP.</li>
+    <li><a name="19980327w2">1998 03 27 w2
+        <br>The <a href="scout/">Scout Report</a>.
+        <br>Viewed 1998 04 03.  This is the weekly report on cool web 
+        sites.</li>
+        </ul></dd>
+</dl>
+<pre>
+Viewed 2006-03-16. The catalog/equip listing from 
+	grep BIBLIO *.html | grep -v JAW | grep -v 
+is below.
+The remaining offtopic items have been stripped.
+
+a.html:BIBLIOGRAPHY - A B BOOKMANS WEEKLY
+ascham.html:BIBLIOGRAPHY - ASSOCIATION FOR COMPUTERING MACHINERY:
+centralab.html:BIBLIOGRAPHY - CENTRAL WASHINGTON STATE COLLEGE
+clark.html:BIBLIOGRAPHY - CLASSEY, E. W., LTD.
+e.html:BIBLIOGRAPHY - EDWARDS, FRANCIS
+f.html:BIBLIOGRAPHY - FAXON COMPANY, F. W.
+g.html:BIBLIOGRAPHY - GAIRM PUBLICATIONS
+holinshed.html:BIBLIOGRAPHY - HOTTLE, KEN
+i.html:BIBLIOGRAPHY - IDC
+i.html:BIBLIOGRAPHY - INTER DOCUMENTATION COMPANY AG
+i.html:BIBLIOGRAPHY - ISDS
+k.html:BIBLIOGRAPHY - GOOD - KIM, UNG CHON
+k.html:BIBLIOGRAPHY - KOTTLER, MALCOLM
+lamour.html:BIBLIOGRAPHY - GOOD - LIBRARY OF CONGRESS
+mackinnon.html:BIBLIOGRAPHY - MAGGS BROS LTD
+mackinnon.html:BIBLIOGRAPHY - METHUEN
+miller_olive_beaupre.html:BIBLIOGRAPHY - THE MIT PRESS
+n.html:BIBLIOGRAPHY - NATIONAL TECHNICAL INFORMATION SERVICE
+perroy.html:BIBLIOGRAPHY - PIERCY, ESTHER J.
+perroy.html:BIBLIOGRAPHY - PONTIFICAL INSTITUTE OF MEDIAEVAL STUDIES
+peters_maureen.html:BIBLIOGRAPHY - PIERCY, ESTHER J.
+renier.html:BIBLIOGRAPHY - ROBINSON, A. M. LEWIN
+u.html:BIBLIOGRAPHY - UNIVERSITY OF WASHINGTON
+ward.html:BIBLIOGRAPHY - WASHINGTON STATE LIBRARY
+ward.html:BIBLIOGRAPHY - WASHINGTON STATE UNIVERSITY
+williams.html:BIBLIOGRAPHY - WITTEN RARE BOOKS, LAURENCE
+woods.html:BIBLIOGRAPHY - WOODS, JAY
+woods.html:   ANTHOCYANIN BIBLIOGRAPHIC INDEX
+woods.html:BIBLIOGRAPHY - WORLD HEALTH ORGANIZATION
+woods.html:BIBLIOGRAPHY - WORLD MICROFILMS PUBLICATIONS
+</pre>
+	</div>
+    <script>
+    </script>
+  </body>
+</html>
