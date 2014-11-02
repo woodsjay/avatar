@@ -1,0 +1,123 @@
+<!DOCTYPE
+HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/strict.dtd">     
+<!-- 
+2001/11/15 Added XML elements
+2004-11-14 Added localization and fixed ELEMENT metadata error
+2005-03-20 Added hyphens to improve keywords
+
+The purpose of the conclusions element is to isolate the text so that  
+it can be easily transferred to a later edition. 
+--> 
+<!ELEMENT  conclusions %inline> 
+<!-- 
+The purpose of the file element is to allow the reconstruction of 
+directory/name homepage/library/notebook structure.                         
+--> 
+<!ELEMENT improve %inline>
+<!--
+The purpose of the nextstep element is to allow the insertion of text
+from notes at the end of the nextstep block. The timehack will 
+be generated and added to the inserted text. It is expected that the 
+text will be editted for clarity and flow at the end of the project.
+-->
+<!ELEMENT nextstep %inline>
+<!-- 
+The purpose of the file element is to allow the reconstruction of 
+directory/name homepage/library/notebook structure.                         
+--> 
+<!ELEMENT metadata (metadata, file*)>
+<!ELEMENT file (#PCDATA)> 
+<!ATTLIST file 
+dir  CDATA #IMPLIED 
+name CDATA #IMPLIED > 
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<head>
+   <meta name="GENERATOR" 
+content="KWrite/4.1-Mandrake-Linux [en] (X11; I; Linux 2.6.3 i686) [Konqueror]" />
+<title>2010-01-23
+ JAW-HOMEPAGE-CONCLUDE</title>
+<style>
+  h3 {
+    text-align: center;
+  }
+  h1 {
+     text-align: center;
+  }
+  table {
+     text-align: center;
+  }
+  img {
+     text-align: center;
+  }
+  dt {
+     font-weight: bold;
+  }
+  .day {
+     border-width: thin;
+     border-style: solid;
+  }
+</style>
+<script language="JavaScript">
+<!--
+//Put the JavaScript below here
+//-->
+</script>
+</head>
+
+<body>
+<!--
+<p><em>
+<ul>
+<li>Looking forward how could you <a href="conclude.html#improve">improve</a> on the
+results.
+<li>What is the <a href="conclude.html#nextstep">next step</a>.
+</ul></em></p>
+-->
+<table border="1">
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Begin</strong></th>
+<th><strong>Previous</strong></th>
+<th><strong>Current</strong></th>
+<th><strong>Next</strong></th>
+<th><strong>End</strong></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th></th>
+<th></th>
+<th><a href="index.html#begin">Woods Home Page</a></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>current</em></th>
+<th><a href="preface.html#begin">The Preface</a></th>
+<th><a href="discuss.html#begin">Discussion</a></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>lower</em></th>
+<th colspan="5">
+<a name="begin" id="begin"></a>
+<a href="conclude.html#improve">Improvements</a>
+, <a href="conclude.html#nextstep">The Next Step</a>
+</th> 
+</tr>
+                                                                                
+</table>
+<h1>The Conclusions That Were Reached</h1> 
+<conclusions>
+<a id="improve" name="improve"></a>
+
+<a id="nextstep" name="nextstep"></a>
+
+</conclusions>
+</body>
+</html>
