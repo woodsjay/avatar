@@ -1,0 +1,593 @@
+<!DOCTYPE
+HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/strict.dtd">     
+<!-- 
+2001/11/15 Added XML elements
+2004-11-14 Added localization, fixed ELEMENT metadata error
+2004-12-30 Added term element, fixed example entry errors
+2005-03-20 Added hyphens to improve keywords
+2005-05-15 Split lines better
+
+The purpose of the equipment element is to isolate the text so that
+it can be easily transferred in from the notes or out to a later edition. 
+-->
+<!ELEMENT equipment %inline>
+<!-- 
+The purpose of the file element is to allow the reconstruction of  
+directory/name homepage/library/notebook structure.
+-->
+<!ELEMENT metadata (metadata, file*)>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file
+dir  CDATA #IMPLIED
+name CDATA #IMPLIED
+>
+<!--
+The purpose of the sort attribute is to allow for the sorting of the 
+dt elements by a script. The dt element and the following dd elements
+will be considered a whole for the purposes of the sort. In general 
+there will be forward and backward sorts.
+-->
+<!ELEMENT dl (#PCDATA)>
+<!ATTLIST dl
+sort 'forward' #IMPLIED
+>
+<!--
+The purpose of the insert attribute is to allow for the insertion of 
+an equipment entry (from, for example, notes) into the list at the given 
+point. The 'equip' insertion will use the 'sort' attribute to determine 
+where to insert the text.
+-->
+<!ELEMENT insert (#PCDATA)>
+<!ATTLIST insert 
+type 'equip' #IMPLIED
+>
+<!-- 
+The term element is being translated over in this section to an anchor 
+and a reference. It should have a name attribute.
+-->
+<!ELEMENT term (#PCDATA)>
+<!ATTLIST term
+name 
+>
+<!--
+There is a close but not exact relationship between the anchor and the term
+as the anchor is a 'short name' for the term. Since the anchor is also the 
+sort name, it must be carefully chosen. In general it will be in lower case
+and among the existing names will sort to the appropriate location. 
+-->
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<!-- find DOFWEEK -->
+<!-- find review tasks -->
+<package href="http://www.openebook.org/sample.pkg">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
+src="http://::127.0.0.1/~woodsj/index.html">
+ <dc:Title>Woods Home Page</dc:Title>
+-<dc:Creator>Woods, Jay Arthur</dc:Creator>
+-<dc:Date event="created">2004-01-18</dc:Date>
+-<dc:Date event="updated">2010-06-20</dc:Date>
+-<dc:Identifier id="HOMEPAGE">Woods Home Page</dc:Identifier>
+-<dc:Subject><file dir="public_html">HOMEPAGE</file></dc:Subject>
+-<dc:Subject><file dir="equip">EQUIP</file></dc:Subject>
+-<dc:Subject><file name="index.html">INDEX</file></dc:Subject>
+-<dc:Publisher>Rattlesnake Press</dc:Publisher>
+-<dc:Format>text/html</dc:Format>
+-<dc:Language>en</dc:Language>
+</metadata>
+</package>
+<head>
+   <meta name="GENERATOR" 
+content="KWrite/4.1-Mandrake-Linux [en] (X11; I; Linux 2.6.3 i686) [Konqueror]" />
+<title>JAW-HOMEPAGE-EQUIP</title>
+<style>
+  h3 {
+    text-align: center;
+  }
+  h1 {
+     text-align: center;
+  }
+  table {
+     text-align: center;
+  }
+  img {
+     text-align: center;
+  }
+  dt {
+     font-weight: bold;
+  }
+  .day {
+     border-width: thin;
+     border-style: solid;
+  }
+</style>
+</head>
+
+<body>
+<!--
+<em><p>
+The general rubric for the various items needed for this project
+is equipment. Use the <a href="../pcheck.html#begin">Check List</a> for more detailed 
+information needs. The information below will allow you to build up to the 
+full package expected by the check list.
+</p><p><ul><li>
+Build a detailed classification of the relationships between the items of 
+equipment. 
+</li><li>
+List and identify the equipment to be used: name, model number,
+uses.  
+</li><li>
+Properties of materials: man pages, Merck index
+entries, diagrams, MSDS specifications.  
+</li><li>
+Costs and suppliers, operating instructions. 
+</li></ul></p></em>
+-->
+<table border="1">
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Begin</strong></th>
+<th><strong>Previous</strong></th>
+<th><strong>Current</strong></th>
+<th><strong>Next</strong></th>
+<th><strong>End</strong></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th></th>
+<th></th>
+<th><a href="../index.html#begin">Woods Home Page</a></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>current</em></th>
+<th><a href="../preface.html#begin">The Preface</a></th>
+<th><a href="../biblio/index.html#begin">The Bibliography</a></th>
+<th><a href="tmpl.html#begin">New Item Template</a></th>
+<th><a href="../plan/index.html#begin">The Plan</a></th>
+<th><a href="../conclude.html#begin">Conclusions</a></th>
+</tr>
+ 
+<tr>
+<th><em>lower</em></th>
+<th colspan="5">
+<a id="begin" name="begin"></a>
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z    </th>
+</tr>
+
+</table>
+
+<h1>EQUIPMENT and SUPPLIES</h1>
+<equipment>
+<dl>
+<dt><em>
+<term name="detailed">Detailed-classification</term></em></dt>
+
+<dd><em>
+<description>See <author>Author_w/link-to-catalog</author></description>. 
+<Biblio:title subject="library-name">Title_w/link-to-physical-site, 
+(date)</Biblio:title></em>.</dd>
+
+<dd><em>
+<property>Properties</property>. <cost>Costs</cost>. 
+<supplier>Suppliers</supplier>. </em></dd>
+</dl>
+</em>
+<h3>
+<a id="" name="contents"></a>What's Up</h3>
+<dl sort="forward">
+<insert type="equip" />
+<dt>
+<a href="#bibliography">ACCOUNTING</a></dt>
+
+<dt>
+<a href="#biology">AGRICULTURE</a></dt>
+
+<dt>
+<a href="#history">ANTHROPOLOGY</a></dt>
+
+<dt>
+<a href="#history">ARCHAEOLOGY</a></dt>
+
+<dt>
+<a href="#family">ARCHERY</a></dt>
+
+<dt>
+<a href="#family">ARCHITECTURE</a></dt>
+
+<dt>
+<a href="#art">ART</a></dt>
+
+<dt>
+<a href="#philosophy">ARTISTRY</a></dt>
+
+<dt>
+<a href="#space">ASTRONOMY</a></dt>
+
+<dt>
+<a href="#fiction">AUDIO - SPOKEN</a></dt>
+
+<dt>
+<a href="#music">AUDIO - SCORED</a></dt>
+
+<dt>
+<a href="#radio">AUDIO - SCRIPTED</a></dt>
+
+<dt>
+<a href="#bibliography">BIBLIOGRAPHY</a></dt>
+
+<dt>
+<a href="#chemistry">BIOCHEMISTRY</a></dt>
+
+<dt>
+<a href="#biology">BIOLOGY</a></dt>
+
+<dt>
+<a href="#business">BUSINESS</a></dt>
+
+<dt>
+<a href="#bibliography">CATALOGING</a></dt>
+
+<dt>
+<a href="#chemistry">CHEMISTRY</a></dt>
+
+<dt>
+<a href="#space">CELESTIAL NAVIGATION</a></dt>
+
+<dt>
+<a href="#computer">COMPUTER</a></dt>
+
+<dt>
+<a href="#family">COOKING</a></dt>
+
+<dt>
+<a href="#music">DANCE</a></dt>
+
+<dt>
+<a href="#dictionary">DICTIONARY</a></dt>
+
+<dt>
+<a href="#biology">ECOLOGY</a></dt>
+
+<dt>
+<a href="#business">ECONOMICS</a></dt>
+
+<dt>
+<a href="#family">EDUCATION</a></dt>
+
+<dt>
+<a href="#family">FAMILY</a></dt>
+
+<dt>
+<a href="#fiction">FICTION</a></dt>
+
+<dt>
+<a href="#geology">GEOGRAPHY</a></dt>
+
+<dt>
+<a href="#geology">GEOLOGY</a></dt>
+
+<dt>
+<a href="#dictionary">GLOSSARY</a></dt>
+
+<dt>
+<a href="#history">HISTORY</a></dt>
+
+<dt>
+<a href="#family">HUNTING</a></dt>
+
+<dt>
+<a href="#dictionary">LANGUAGE</a></dt>
+
+<dt>
+<a href="#philosophy">LAW</a></dt>
+
+<dt>
+<a href="#fiction">LITERATURE</a></dt>
+
+<dt>
+<a href="#geology">MAPS</a></dt>
+
+<dt>
+<a href="#philosophy">MATH</a></dt>
+
+<dt>
+<a href="#biology">MEDICINE</a></dt>
+
+<dt>
+<a href="#physics">METEOROLOGY</a></dt>
+
+<dt>
+<a href="#military">MILITARY</a></dt>
+
+<dt>
+<a href="#movies">MOVIES</a></dt>
+
+<dt>
+<a href="#music">MUSIC</a></dt>
+
+<dt>
+<a href="#geology">PALEONTOLOGY</a></dt>
+
+<dt>
+<a href="#dictionary">PENMANSHIP</a></dt>
+
+<dt>
+<a href="#philosophy">PHILOSOPHY</a></dt>
+
+<dt>
+<a href="#physics">PHYSICS</a></dt>
+
+<dt>
+<a href="#philosophy">POLITICS</a></dt>
+
+<dt>
+<a href="#fiction">PLAYS</a></dt>
+
+<dt>
+<a href="#fiction">POETRY</a></dt>
+
+<dt>
+<a href="#family">PSYCHOLOGY</a></dt>
+
+<dt>
+<a href="#radio">RADIO</a></dt>
+
+<dt>
+<a href="#religion">RELIGION</a></dt>
+
+<dt>
+<a href="#philosophy">RHETORIC</a></dt>
+
+<dt>
+<a href="#computer">ROBOTICS</a></dt>
+
+<dt>
+<a href="#science">SCIENCE</a></dt>
+
+<dt>
+<a href="#music">SONGS</a></dt>
+
+<dt>
+<a href="#space">SPACE</a></dt>
+
+<dt>
+<a href="#dictionary">THESAURUS</a></dt>
+
+<dt>
+<a href="#history">TRAVEL</a></dt>
+
+<dt>
+<a href="#tv">TV</a></dt>
+
+<dt>
+<a href="#family">VENERY</a></dt>
+
+<dt>
+<a href="#tv">VIDEO - STORYBOARDED/SCRIPTED - EPISODIC</a></dt>
+
+<dt>
+<a href="#movies">VIDEO - STORYBOARDED/SCRIPTED - SINGLE EPISODE</a></dt>
+
+<dt>
+<a href="#music">VIDEO - STORYBOARDED/SCRIPTED/SCORED/CHOREOGRAPHED</a></dt>
+
+</dl>
+<h3><a id="notes" name="notes"></a>An Annotated List</h3>
+
+<ol>
+<li>
+<a href="../art/intro.html" id="family" name="family">ART</a> - 
+How to beautify the plain for little cost and much satifaction.
+How to see the world of imagination in the space of a single image. 
+A picture is worth the thousand words it would take to script it.
+</li>
+
+<li><a href="../biblio/intro.html" id="bibliography" name="bibliography">BIBLIOGRAPHY, ACCOUNTING, 
+and CATALOGING LIBRARY</a> - 
+<p>The skill of keeping all these books straight. 
+The skill fails at 30,000 physical books for a single person. 
+The fiction books are being tossed and replaced with electronic books.
+The public domain non-fiction is going also. 
+A favorite place to find out about books is 
+the <a href="http://amazon.com">Amazon Books</a>,
+the <a href="http://www.gutenberg.org/catalog/">Gutenberg Project</a>,
+the <a href="http://www.archive.com/">Archive</a>, 
+the <a href="http://books.google.com/">Google Books</a>, and 
+<a href="http://onlinebooks.library.upenn.edu/authors.html">Online Books Page</a>,
+for journals the <a href="http://scholar.google.com/">Google Scholar</a>
+and for general searches the <a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a> and 
+<a href="http://www.google.com/">Google</a>. For finding journals and books
+locally use <a href="telnet://genisys.unomaha.edu">UNO</a>
+and for inexpensive interlibrary loans use <a href="telnet://iris.unl.edu">UNL</a>.</p>
+
+<p>The actual book catalogs are split between the library sections
+such as this bibliography library section but
+for an overview of the catalogs see <a href="../biblio/catalog/index.html">The
+Book Catalog</a>. The web browser bookmarks are built from the library
+sections and are used to update the library section but an overall view of
+the <a href="../biblio/netmarks/index.html">bookmarks</a>
+is available.</p>
+
+<p>Most record keeping tells you what is at any point in time. Double-Double 
+Entry Accounting tells you about the counter-flow and exchange of items, 
+of the cost of every thing and the value of nothing.</p>
+
+<p>The content of the libraries is primarily codexes but the text form can
+also be a score, a script, a storyboard, or a choreography. 
+The non-text forms seem endless but certainly embrace audio, images, and
+video.</p>
+</li>
+
+<li><a href="../biology/intro.html" id="biology">BIOLOGY. AGRICULTURE,
+ECOLOGY, and MEDICINE</a> - I like <a 
+href="../family/biblio/house/biblio/vegies.html">food</a>
+more than flowers, <a href="../family/biblio/house/biblio/fruits.html">trees</a>
+more than concrete. Here is the secret of such beauty.</li>
+
+<li>
+<a href="../business/intro.html" id="business">BUSINESS
+and ECONOMICS</a> - How to buy land for under a $1000/acre here in Wellington.  
+How to hire an <a href="../cv.html">problem solver</a>.
+Water is the stuff of life, buy your <a href="../business/biblio/woods dale/water/index.html">water
+machine </a>here. While you are at it get several other interesting
+<a href="../chemistry/biblio/novartis/index.html">chemical
+synthesizers</a>.</li>
+
+<li>
+<a href="../chemistry/intro.html" id="chemistry">CHEMISTRY and BIOCHEMISTRY</a> -
+For an unhurried look at erronia follow this to biochemistry. Chemistry
+has been the love of my life since I was a small child. I hope to return
+this love by creating a line of small chemical plants (desk sized), call
+them personal synthesizers, that will meld computers and reactors to produce
+cheap and readily available fine chemicals. When Microsoft kept changing the
+languages too fast, I gave up on computing and went back to chemistry.</li>
+
+<li>
+<a href="../computer/intro.html" id="computer">COMPUTING and 
+ROBOTICS</a> -
+It should be possible to compute my way out of the laboratory. This should
+make the rats happy. I found out that the laboratory was a rat race and
+the rats were winning. Back to the linux computer world. If you cross a computer
+with a bug you get a very cross robot. Now that the operating system has been 
+settled, on to the language wars. Is C++ a general use language?
+<a href="../computer/equip/computer_bookmarks.html">Computer
+bookmarks</a>.</li>
+
+<li>
+<a href="../dictionary/intro.html" id="dictionary" name="dictionary">DICTIONARY, GLOSSARY, LANGUAGE, and THESAURUS</a>
+- All the visible of our lives is woven from a tangled skein of words.
+With the distilled liquor of our experience we can anoint the thread of
+thought and tease away the snarls.</li>
+
+<li>
+<a href="../family/intro.html" id="family" name="family">FAMILY,
+ARCHITECTURE, COOKING, EDUCATION, and PSYCHOLOGY</a> - How to build for $3/sq ft and keep the city happy.
+Well, they aren't too happy. How to contact the government.</li>
+
+<li>
+<a href="../fiction/intro.html" id="fiction" name="fiction">FICTION (BOOKS) and POETRY</a>
+- When all you ever wanted was to find one good book, is 16,000
+<a href="../biblio/catalog/index.html">books</a> too many? 
+The historical fiction is a distant image of our past seen through
+the wrong end of a telescope. 
+The science fiction is a window looking into the dark, showing shadows 
+of our coming lives. 
+The detective novel can lead us to understanding our true selves that 
+we would hide in this age. 
+Fiction over the ages leads us to the shifting image of our souls.</li>
+
+<li>
+<a href="../geology/intro.html" id="geology" name="geology">GEOLOGY,
+PALEONTOLOGY, GEOGRAPHY, and MAPS</a> - 
+The buried volcanoes of Eastern 
+Nebraska are being unburied here with all their associated mineral 
+wealth. </li>
+
+<li>
+<a href="../history/index.html" id="history" name="history">HISTORY,
+ARCHAEOLOGY, TRAVEL, and ANTHROPOLOGY</a> - 
+<p><a href="../biblio/catalog/kline.math.html">The
+zero</a> was introduced to Europe by a <a href="../biblio/catalog/g.html#gerbert">Pope</a>;
+and forgotten for two hundred years. Did he teach <a href="../biblio/catalog/abbo.html">Saint
+Abbo of Fleury</a> about the zero?</p>
+
+<p>Can a <a href="../family/biblio/house/equip/house.biblio.genealogy.html">family</a>
+learn from it's own history?</p></li>
+
+<li>
+<a href="../military/intro.html" id="military" name="military">MILITARY</a> - 
+When you want to kill people and break things. </li>
+
+<li>
+<a href="../movies/intro.html" id="movies" name="movies">MOVIES and VIDEOS (LONG)</a> - 
+See the world of imagination in time and space.
+The script and storyboard can capture the flesh of the story.
+The video can hold the spirit.
+</li>
+
+<li>
+<a href="../music/intro.html" id="music" name="music">MUSIC and DANCE</a> - 
+Hear the sound of imagination in time.
+See the flow of movement.
+The score will lead you to the reward.
+The choreography will shape the flow.
+Only the performance will tell if you can follow.
+I like to play the recorder and sing. 
+Nobody yells at the recorder.
+</li>
+
+<li>
+<a href="../philosophy/intro.html" id="philosophy" name="philosophy">PHILOSOPHY, ARTISTRY, and LAW,
+</a> - If you wish to rule others and create beauty you need to know the why of <a href="../philosophy/index.html#begin">it</a>. 
+A cornerstone for current building is the libertarian party. </li>
+
+<li>
+<a href="../physics/intro.html"
+id="physics" name="physics">PHYSICS, METEOROLOGY,
+and MATH</a> - If I would build, I must know. Can turbulence be treated
+as a temperature measured by the mass of particle it can suspend? Does
+turbulence have a density, a heat capacity? Is there a conductivity? Is there an
+increase as turbulence increases? An early worker with turbulence is
+<person>Blinova, Yakaterina Nakitichna</person>. Can an inexpensive
+<a href="../physics/biblio/nuclear/intro.html">nuclear reactor</a> be built?</li>
+
+<li>
+<a href="../radio/intro.html" id="radio" name="radio">RADIO and other voice AUDIO</a> - 
+Hear the world of imagination in time.
+The script will set the stage.
+</li>
+
+<li>
+<a href="../religion/intro.html" id="religion" name="religion">RELIGION</a> - 
+This is where I must justify myself. Of all the christians
+out there, my heart follows along the line of hope spun by those who have
+proceeded me as <a href="http:/www.anabaptists.org/">Mennonites</a>. 
+Since I was discarded by my first wife, I am unacceptable to them. </li>
+
+<li><!-- This section has been used as a starting point for the preface and 
+intro of science. 2005-10-08 -->
+<a href="../science/intro.html" id="science" name="science">SCIENCE
+and ENGINEERING</a> - The general and the journal. For an analysis see
+<a href="../science/index.html">The
+Fundamentals of the Scientific Method</a>. What seems to be left out of
+much scientific work is the application of the new understanding to some
+real world problem. I would personally claim that 'good' scientific work
+should be real world driven; that the scientific enterprise will be systematically
+starved of resources until scientists look to sponsors in the world outside
+of the government and education. The experiments kept here are
+<a href="../science/biblio/notebook/index.html">on
+keeping notebooks for the scholar, scientist, engineer, and computer programmer</a>,
+<a href="../biblio/catalog/abbo.html">on
+documenting nomenclature</a>, and <a href="../science/equip/standard/check.html">on
+a checklist for systems</a>. These experiments are interrelated. The notebook
+can be thought of as a "revision control system"
+for a particular <a href="../science/equip/standard/index.html">scientific</a>
+system. In contrast to the usual in programming or engineering, most scientific
+work can be thought of 'reverse engineering' of a 'black box' to go from
+an existing system to the principles of its operation at the best or to
+the operation of some components of the system at the least.</li>
+
+<li>
+<a href="../space/intro.html" id="space" name="space">SPACE,
+CELESTIAL NAVIGATION, and ASTRONOMY</a> - This is where I keep my dream
+of working on the colonization of space. Just imagine the cDNA library
+activated by weightlessness.</li>
+
+<li>
+<a href="../tv/intro.html" id="tv" name="tv">TV</a> - 
+See the world of imagination in time and space just so long as you don't
+take too long at it.
+This allows that world in episodes.
+The scripts, storyboards, and arc give a hint of the richness.
+</li>
+
+</ol>
+
+</equipment>
+</body>
+</html>
+
