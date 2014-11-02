@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="WOODS" version="1.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Woods Family Avatar</dc:title>
+		<dc:creator opf:role="aut">Woods, Jay Arthur</dc:creator>
+		<dc:language>en-US</dc:language>
+		<dc:rights>Public Domain</dc:rights>
+		<dc:publisher>Rattlesnake Press</dc:publisher>
+		<dc:identifier id="WOODS" opf:scheme="UUID">Woods Family Avatar</dc:identifier>
+	</metadata>
+	<manifest>
+         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+         <item id="style" href="stylesheet.css" media-type="text/css" />
+         <item id="index" href="index.html" media-type="application/xhtml+xml" />
+         <item id="preface" href="preface.html" media-type="application/xhtml+xml" />
+         <item id="abstract" href="abstract.html" media-type="application/xhtml+xml" />
+         <item id="glossary" href="gloss.html" media-type="application/xhtml+xml" />
+         <item id="introduction" href="intro.html" media-type="application/xhtml+xml" />
+         <item id="bibliography" href="biblio/index.html" media-type="application/xhtml+xml" />
+         <item id="equipment" href="equip/index.html" media-type="application/xhtml+xml" />
+         <item id="plan" href="plan/index.html" media-type="application/xhtml+xml" />
+         <item id="priority" href="plan/priority.html" media-type="application/xhtml+xml" />
+         <item id="verify" href="plan/verify.html" media-type="application/xhtml+xml" />
+         <item id="notes" href="notes/index.html" media-type="application/xhtml+xml" />
+         <item id="discussion" href="discuss.html" media-type="application/xhtml+xml" />
+         <item id="conclusions" href="conclude.html" media-type="application/xhtml+xml" />
+         <item id="imgl" href="images/open_source_green.png" media-type="image/png" />
+    </manifest>
+    <spine toc="ncx">
+         <itemref idref="index" />
+         <itemref idref="preface" />
+         <itemref idref="abstract" />
+         <itemref idref="glossary" />
+         <itemref idref="introduction" />
+         <itemref idref="bibliography" />
+         <itemref idref="equipment" />
+         <itemref idref="plan" />
+         <itemref idref="notes" />
+         <itemref idref="discussion" />
+         <itemref idref="conclusions" />
+   </spine>
+</package>
