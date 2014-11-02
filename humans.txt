@@ -1,0 +1,9 @@
+/* TEAM */
+Your title: Jay Woods, Scholar
+Site: woodsjaya@gmail.com
+Location: Wellington, NV, USA
+
+/* SITE */
+Last Update: Daily
+Standards: HTML5, CSS3, ECMA5, EPUB3, C11
+Software: GNU, LINUX, REDHAT, KDE, FIREFOX, KWRITE
