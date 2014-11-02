@@ -1,0 +1,153 @@
+<!DOCTYPE
+HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/strict.dtd">     
+<!-- 
+2014-01-05 JAY - Updated to version 6
+2005-07-10 Improved file structures.
+2005-03-20 Added hyphens to improve keywords.
+2004-11-20 Corrected navigation for author level.
+2004-11-20 Added localization and corrected ELEMENT metadata error.
+2001-11-15 Added XML elements.
+
+The purpose of the article element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+-->
+<!ELEMENT article %inline>
+<!-- 
+The purpose of the file element is to allow the reconstruction of  
+directory/name homepage/library/notebook structure.                         
+-->
+<!ELEMENT metadata (metadata, file*)>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file
+dir  CDATA #IMPLIED
+name CDATA #IMPLIED
+>
+<!--
+The purpose of the insert attribute is to allow for the insertion of 
+a text entry into the list at the given point. 
+-->
+<!ELEMENT insert (#PCDATA)>
+<!ATTLIST insert 
+type 'text' #IMPLIED
+>
+<package href="http://www.openebook.org/sample.pkg">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
+src="http://::127.0.0.1/~woodsj/biblio/index.html">
+<em>
+ <dc:Title>The Woods Family Avatar</dc:Title>
+-<dc:Creator>Woods, Jay Arthur</dc:Creator>
+-<dc:Date event="started">1997-12-20</dc:Date>
+-<dc:Date event="updated">2012-01-31</dc:Date>
+-<dc:Date event="updated">2013-12-26</dc:Date>
+-<dc:Date event="updated">2014-01-27</dc:Date>
+-<dc:Identifier id="HOMEPAGE">The Woods Family Avatar</dc:Identifier>
+-<dc:Subject><file dir="public_html">HOMEPAGE</file></dc:Subject>
+-<dc:Subject><file dir="biblio">BIBLIO</file></dc:Subject>
+-<dc:Subject><file dir="TMPLDIR">TMPLNAME</file></dc:Subject>
+-<dc:Subject><file name="index.html">INDEX</file></dc:Subject>
+-<dc:Publisher>Rattlesnake Press</dc:Publisher>
+-<dc:Format>text/html</dc:Format>
+-<dc:Language>en</dc:Language>
+</em>
+</metadata>
+</package>
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<head>
+   <meta name="GENERATOR" 
+content="KWrite/4.1-Mandrake-Linux [en] (X11; I; Linux 2.6.3 i686) [Konqueror]" />
+   <title>TMPLNAME INDEX</title>
+<style>
+  h3 {
+    text-align: center;
+  }
+  h1 {
+     text-align: center;
+  }
+  table {
+     text-align: center;
+  }
+  img {
+     text-align: center;
+  }
+  dt {
+     font-weight: bold;
+  }
+  .day {
+     border-width: thin;
+     border-style: solid;
+  }
+</style>
+<script language="JavaScript">
+<!--
+//Put the JavaScript below here
+//
+-->
+</script>
+</head>
+
+<body>
+<protocol>
+<p><em>
+The template is a starting point for creating a publication which is
+not in the standard notebook format but does have an author and a title. 
+It is expected that the author and title directories will be created 
+and a copy of this template will be placed there as index.html.
+This will ordinarily work for books, reports, and journal articles. 
+Where the author or (rarely) the title concept is not appropriate, use 
+the <a href="../equip/tmpl.html">equipment template</a> and store 
+the created document in that section.
+It is also used for the index of an existing author to list the 
+publications owned and all the publications for the author quite often
+classified.
+</em></p>
+</protocol>
+<table border="1">
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Begin</strong></th>
+<th><strong>Previous</strong></th>
+<th><strong>Current</strong></th>
+<th><strong>Next</strong></th>
+<th><strong>End</strong></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th><a href="../../preface.html#begin">The Preface</a></th>
+<th><a href="../../intro.html#begin">The Introduction</a></th>
+<th><a href="../../index.html#begin">The Table of Contents</a></th>
+<th><a href="../../equip/index.html#begin">Classifications and Suppliers</a></th>
+<th><a href="../../conclude.html#begin">The Conclusions</a></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th></th>
+<th></th>
+<th><a href="../index.html#begin">The Bibliography</a></th>
+<th></th>
+<th><a href="../tmpl.html">Template for New Author</th>
+</tr>
+
+<tr>
+<th><em>current</em></th>
+<th></th>
+<th></th>
+<th><a href="index.html#begin">The Works of AUTHOR_NAME</a></th>
+<th></th>
+<th></th>
+</tr>
+</table>
+<a name="begin" id= "begin"></a>
+<dl>
+<article>
+<dt>About:</dt>
+<dt>Owned:</dt>
+<dt>Bibliography:</dt>
+<insert type="text" />
+</article>
+</dl>
+</body>
+</html>
