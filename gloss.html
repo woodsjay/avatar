@@ -1,0 +1,236 @@
+<!DOCTYPE
+HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/strict.dtd">
+<!--
+2001/11/15 Added XML elements
+2004-05-16 Added additional introductory material
+2004-11-14 Added localization, fixed ELEMENT metadata error
+2005-03-20 Added hyphens to improve keywords.
+2005-07-10 Improved file structures.
+2008-03-09 Added the RiveScript material.
+
+The purpose of the glossary element is to isolate the text so that
+it can be easily transferred to a later edition.
+-->
+<!ELEMENT glossary %inline>
+<!-- 
+The purpose of the file element is to allow the reconstruction of  
+directory/name homepage/library/notebook structure.
+-->
+<!ELEMENT metadata (metadata, file*)>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file
+dir  CDATA #IMPLIED
+name CDATA #IMPLIED
+>
+<!--
+The purpose of the sort attribute is to allow for the sorting of the 
+dt elements by a script. The dt element and the following dd elements
+will be considered a whole for the purposes of the sort. In general 
+there will be forward and backward sorts.
+-->
+<!ELEMENT dl (#PCDATA)>
+<!ATTLIST dl
+sort 'forward' #IMPLIED
+>
+<!--
+The purpose of the insert attribute is to allow for the insertion of 
+a glossary entry into the list at the given point. 
+-->
+<!ELEMENT insert (#PCDATA)>
+<!ATTLIST insert 
+type 'gloss' #IMPLIED
+>
+<package href="http://www.openebook.org/sample.pkg">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/"
+src="http://::127.0.0.1/~jwoods/index.html">
+ <dc:Title>Woods Family Home Page</dc:Title>
+-<dc:Creator>Woods, Jay Arthur</dc:Creator>
+-<dc:Date>2004-01-18</dc:Date>
+-<dc:Date>2008-03-09</dc:Date>
+-<dc:Date>2011-02-23</dc:Date>
+-<dc:Subject><file dir="public_html">WOODS</file></dc:Subject>
+-<dc:Subject><file name="gloss.html">GLOSS</file></dc:Subject>
+-<dc:Publisher>Rattlesnake Press</dc:Publisher>
+-<dc:Format>text/html</dc:Format>
+-<dc:Language>en</dc:Language>
+</metadata>
+</package>
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<head>
+   <meta name="GENERATOR" 
+content="KWrite/4.1-Mandrake-Linux [en] (X11; I; Linux 2.6.3 i686) [Konqueror]" />
+   <title>JAW GLOSS</title>
+<style>
+  h3 {
+    text-align: center;
+  }
+  h1 {
+     text-align: center;
+  }
+  table {
+     text-align: center;
+  }
+  img {
+     text-align: center;
+  }
+  dt {
+     font-weight: bold;
+  }
+  .day {
+     border-width: thin;
+     border-style: solid;
+  }
+</style>
+<script language="JavaScript">
+<!--
+//Put the JavaScript below here
+//-->
+</script>
+</head>
+
+<body>
+<!--
+<p><em>This is combination of a glossary, definitions of abbreviations and an
+index. 
+Use the <em>KWIC</em><a href="gloss.html#kwic">*</a> approach for the description via
+the spell checker until there is a reviewed definition. Add part of speech
+(and derivation or language if non-English).
+</em></p>
+
+<p><em>When in the fully functioning state it should be possible to carry on a 
+dialog with the library to get answers to questions within the scope of the library.
+Each project in the library provides the vocabulary and rules for this dialog. The 
+dialog is carried on with the aid of the <a href="equip/glossary/RiveScript-1.03/docs/RiveScript.html">RiveScript</a> program.
+The program has been loaded with the glossary and rules found in this library. 
+As of 2008-03-09 there are the initial 8300 head words in RiveScript. </em></p>
+
+<p><em>Each project is reviewed to generate the glossary and rules for the library by
+reviewing each document in the context of a generated question for each paragraph. 
+</em></p>
+
+<p><em>Each document in the project is reviewed for keywords not in the
+common glossary (of 10,000 keywords which is
+in root and the prefaces to each section) and the library glossary (of 
+10,000 keywords which is in each library and the section text of each 
+library). 
+None of the rest of the paragraph is done when the new keyword is drawn 
+from the glossary itself.
+The new keyword (and definition if present) is surrounded with the gloss 
+tagging. 
+The keyword itself is surrounded by the term tagging. 
+The definition or defining usage is surrounded by the description 
+tagging. 
+In addition, the keyword is anchored by a lowercase version of the 
+keyword. 
+After the transfer of the new gloss to the glossary, a 
+<em>URL</em><a href="gloss.html#url">*</a> to the glossary with the 
+contents of the '*' symbol is added just after the keyword.</em></p>
+
+<p><em>Over on the glossary side, the keyword plus anchor is added with <em>dt</em><a 
+href="gloss.html#dt">*</a> tagging.
+The description is added plus a URL to the original document is added 
+with <em>dd</em><a href="gloss.html#dd">*</a> tagging.
+The pronunciation, derivation, part of speech, and year of first use are then added.
+</em></p>
+-->
+<table border="1">
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Begin</strong></th>
+<th><strong>Previous</strong></th>
+<th><strong>Current</strong></th>
+<th><strong>Next</strong></th>
+<th><strong>End</strong></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th></th>
+<th></th>
+<th><a href="index.html#begin">Woods Family Home Page</a></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>current</em></th>
+<th><a href="preface.html#begin">The Preface</a></th>
+<th><a href="abstract.html#begin">The Abstract</a></th>
+<th></th>
+<th><a href="intro.html#begin">The Introduction</a></th>
+<th><a href="conclude.html#begin">Conclusions</a></th>
+</tr>
+ 
+<tr>
+<th><em>lower</em></th>                                                       
+<th colspan="5">
+<a id="begin" name="begin"></a>
+A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z    
+</th>
+</tr>                                                                                          
+</table>
+<h1>The Glossary and Index</h1>
+<glossary>
+<em><dl>
+<dt><term>
+<a name="anchor" id="anchor" href="gloss.html#anchor">Name_w/anchor</a>
+</term></dt>
+
+<dd>\pronunciation\ <strong>part-of-speech</strong> 
+[<dfn>derivation</dfn>] (year-of-first-use):
+<description>Description_w/link-to-documentation</description></dd>
+
+<dd>
+<index>Indexing_w/link-to-equip/biblio</index></dd>
+</dl></em>
+<dl sort="forward">
+<insert type="gloss" />
+<a name="dd" id="dd"></a>
+<dt><term>dd</term></dt>
+	<dd>
+<description>In HTML and xhtml the tagging for a definition description. </description>
+	</dd>
+<a name="dt" id="dt"></a>
+<dt><term>dt</term></dt>
+	<dd>
+<description>In <em>HTML</em><a href="gloss.html#html">*</a> and 
+<em>xhtml</em><a href="gloss.html#xhtml">*</a> the tagging for a definition term. </description>
+	</dd>
+<dt><term>ebook</term></dt>
+	<dd>
+<derivation>[electronic book].</derivation>
+<description>The term for a book in electronic format. 
+It is to be preferred over the earlier terms, eBook and e-book.
+Dan Poynter - email 2011-02-21</description>
+	</dd>
+<a name="html" id="html"></a>
+<dt><term>HTML</term></dt>
+	<dd>
+<derivation>[HyperText Markup Language].</derivation>
+	</dd>
+<a name="kwic" id="kwic"></a>
+<dt><term>KWIC</term></dt>
+	<dd>
+<derivation>[KeyWord In Context].</derivation>
+	</dd>
+<a name="url" id="url"></a>
+<dt><term>URL</term></dt>
+	<dd>
+<derivation>[Uniform Resource Locator].</derivation>
+	</dd>
+<a name="xhtml" id="xhtml"></a>
+<dt><term>xhtml</term></dt>
+	<dd>
+<derivation>[<em>XML</em><a href="gloss.html#xml">*</a> HTML]</derivation>
+	</dd>
+<a name="xml" id="xml"></a>
+<dt><term>XML</term></dt>
+	<dd>
+<derivation>[eXtended Markup Language].</derivation>
+	</dd>
+</dl>
+</glossary>
+</body>
+</html>
