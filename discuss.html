@@ -1,0 +1,130 @@
+<!DOCTYPE
+HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/strict.dtd">     
+<!-- 
+2001/11/15 Added XML elements
+2004-11-14 Added localization and fixed ELEMENT metadata error
+2005-03-20 Added hyphens to improve keywords
+
+The purpose of the results element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+-->
+<!ELEMENT results %inline>
+<!--
+The purpose of the right element is to allow the insertion of text 
+from the notes just before the end of the results block. The timehack will 
+be generated and added to the inserted text. It is expected that the 
+text will be editted for clarity and flow at the end of the project.
+-->
+<!ELEMENT right %inline>
+<!--
+The purpose of the economics element is to allow the insertion of text
+from the notes just before the end of the economics block. The timehack will 
+be generated and added to the inserted text. It is expected that the 
+text will be editted for clarity and flow at the end of the project.
+-->
+<!ELEMENT economics %inline>
+<!-- 
+The purpose of the file element is to allow the reconstruction of  
+directory/name homepage/library/notebook structure.                         
+-->
+<!ELEMENT metadata (metadata, file*)>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file
+dir  CDATA #IMPLIED
+name CDATA #IMPLIED
+>
+<html xmlns="http://www.w3.org/TR/xhtml1">
+<head>
+   <meta name="GENERATOR" 
+content="KWrite/4.1-Mandrake-Linux [en] (X11; I; Linux 2.6.3 i686) [Konqueror]" />
+<title>2005-07-04
+ JAW-HOMEPAGE-DISCUSS</title>
+<style>
+  h3 {
+    text-align: center;
+  }
+  h1 {
+     text-align: center;
+  }
+  table {
+     text-align: center;
+  }
+  img {
+     text-align: center;
+  }
+  dt {
+     font-weight: bold;
+  }
+  .day {
+     border-width: thin;
+     border-style: solid;
+  }
+</style>
+</head>
+<body>
+<!--
+<p><em>
+<ul>
+<li>Looking back, does the programming <a href="discuss.html#right">meet</a> the goal.
+</li>
+<li>Discuss the <a href="discuss.html#economics">economics</a> of the
+approach to solving the problem as a study method (prototype), 
+as a production program (for market). </li>
+</ul>
+</em></p>
+-->
+<table border="1">
+<tr>
+<th><strong>Level</strong></th>
+<th><strong>Begin</strong></th>
+<th><strong>Previous</strong></th>
+<th><strong>Current</strong></th>
+<th><strong>Next</strong></th>
+<th><strong>End</strong></th>
+</tr>
+
+<tr>
+<th><em>higher</em></th>
+<th></th>
+<th></th>
+<th><a href="index.html#begin">Standard Project</a></th>
+<th></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>current</em></th>
+<th><a href="preface.html#begin">The Preface</a></th>
+<th><a href="notes/index.html#begin">The Observations</a></th>
+<th></th>
+<th><a href="conclude.html#begin">Conclusions</a></th>
+<th></th>
+</tr>
+
+<tr>
+<th><em>lower</em></th>
+<th colspan="5">
+<a name="begin" id="begin"></a>
+<a href="discuss.html#right">Is it Right</a>
+, <a href="discuss.html#economics">The Economics</a>
+</th>
+</tr>                                                                                          
+</table>
+<h1>A Discussion of the Results</h1>
+<results>
+<a name="right" id="right"></a>
+<p>It has not worked out well to become wealthy when one of the family members is 
+chronically ill. Never the less by putting small amounts of money into inexpensive 
+property it has been possible to build up a nestegg and the tools and property to 
+achieve much of personal part of the goal.</p> 
+
+<p>However, it has been much more difficult than expected to pass the results on 
+to the next generation. It is much like herding cats. The next generation doesn't 
+push well and the lures that would attract have not been found. It is likely that 
+this is a personal failure on the part of the leaders. </p>
+
+<a name="economics" id="economics"></a>
+</results>
+</body>
+</html>
