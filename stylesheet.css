@@ -1,0 +1,126 @@
+/*   Jay Woods
+     stylesheet.css
+     13SP_INFO_1311_WW
+     Olberding
+     2014-04-28
+*/
+h1 {
+	text-align: center;
+}
+h2 { 
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+table {
+	text-align: center;
+}
+/*
+It is assumed that all images are in the center "text" column. 
+*/
+img {
+	text-align: center;
+}
+dt {
+	font-weight: bold;
+}
+.open {
+	font-weight: bold;
+}
+/*
+The purpose of the toc element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+The purpose of the preface element is to isolate the text so that
+it can be easily transferred to a later edition.   
+The purpose of the bibliography element is to isolate the text so that
+it can be easily transferred to a later edition.      
+The purpose of the equipment element is to isolate the text so that
+it can be easily transferred in from the notes or out to a later edition.
+The purpose of the notes element is to isolate the text so that
+it can be easily transferred to a later edition. Within the notes
+elements from other sections of the document will be used to wrap
+text that can be duplicated in those sections. The definition of 
+those elements will be added as the design is worked out.
+The purpose of the conclusions element is to isolate the text so that  
+it can be easily transferred to a later edition. 
+The purpose of the glossary element is to isolate the text so that
+it can be easily transferred to a later edition.
+The purpose of the plan element is to isolate the text so that
+it can be easily transferred to a later edition.
+The purpose of the results element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+The purpose of the verify element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+The purpose of the article element is to isolate the text so that
+it can be easily transferred to a later edition. 
+The purpose of the priority element is to isolate the text so that
+it can be easily transferred to a later edition.                                      
+*/
+.toc, .preface, .abstract, .glossary, .introduction, .bibliography, 
+.equipment, .notes, .plan, .results, .conclusions, .article, 
+.verify, .priority {
+    margin-right: 180px;
+    margin-left: 180px;
+}
+/*
+The purpose of the protocol element is to allow the separation of the 
+text into verbose (protocol) and sparse (without protocol) categories.
+This is holding the protocols in the right "annotations" column.
+*/
+@media screen {
+.protocol {
+	border: 1px solid black;
+	font-style: italic;
+	float: right;
+	width: 160px;
+    padding: 20px 5px 5px 20px; 
+}
+.inlineprotocol {
+	font-style: italic;
+}
+.nav { 
+	border: 1px solid black;
+	font-weight: bold;
+    float: left;
+    width: 160px;
+    padding: 20px 5px 5px 20px; 
+} 
+/*
+This gives the effect of h3 but continues using the listing control
+for sorting purposes.
+*/
+.indextab {
+	text-align: center;
+}
+/*
+The purpose of the term selector is to emphasize the main 
+classifier.
+*/
+.term {
+	font-style: italic;
+}	
+.keyword {
+	font-weight: bold;
+}
+/*
+The purpose of the following subsection elements is to isolate the 
+text so that it can be easily transferred to a later edition. 
+*/
+.goal, .study, .result, .keyword, .conclusion,
+.purpose, .work, .requirements, .technical, .political {
+}
+/*
+The purpose of the taskdir element is to isolate the text so that it can
+be easily transferred to a later edition. This is a list of pointers to
+the individual tasks.
+The purpose of the onholdtasks element is to isolate the text so that it
+can be easily transferred to a later edition without touching the time
+elements embedded elsewhere in the notes element.
+The purpose of the currenttasks element is to isolate the text so that it
+can be easily transferred to a later edition without touching the time
+elements embedded elsewhere in the notes element.
+
+*/
+.taskdir, .onholdtasks, .checklist {
+}
