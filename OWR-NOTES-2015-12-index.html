@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>DICT BIBLIO JAY OWR NOTES 2015 12 INDEX</title>
+	<link rel="author" type="text" href="../../../humans.txt">
+	<link rel="agency" type="text" href="../../../robots.txt">
+	<link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+  </head>
+  <body>
+<div class="header">
+<a id="title" href="index.html#title">Oral and Written Reports</a>
+<hr>    
+</div> <!-- END header -->
+<div class="protocol">
+<p>
+For scholarly work, each of the notes should be a triple quite often 
+of one liners:
+</p>
+<ul style="list-style-type: none; margin:0;padding:0"><li>
+<strong>H</strong> - The thesis or hypothesis. The requirement.
+</li><li>
+<strong>E</strong> - The antithesis or experiment indented by one tab. 
+The design. The code.
+</li><li>
+<strong>R</strong> - The resolution or results with 
+implications for further work where each would be a new 
+first of a triple indented by two tabs.
+</li></ul>
+<p>
+On occasion it is necessary to link to a date.
+That will occur when the flow of work is intertwined between 
+tasks/projects.
+The task/project abbreviation should prepend the date anchor.
+When transferred to PLAN COMPLETED there is less chance of conflict
+with other projects.
+</p><p>
+generate index.txt by screen scraping:
+<pre>
+spell -on index.txt \
+| sort -k 3 -t: \
+| uniq -f 2 -t: \
+| sort -f -k 3 -t: \
+> gloss.tmp 
+cut -f3 -d: gloss.tmp \
+| paste - -d: gloss.tmp \
+| cut -f1-3 -d: \
+> gloss-new.txt
+</pre>
+get the %s/^ //g as a way to get the leading blank out.
+</p><p>
+get the %s/:index.txt/:2015\/05\/index.txt/g in.
+<pre>
+sort -f -m -k1,1 -t: \
+../../../gloss.txt gloss-new.txt \
+| uniq -t: -W 1 \
+> gloss.txt
+</pre>
+after inspection:
+<pre>
+cp gloss.txt ../../../gloss.txt 
+</pre>
+</p>
+</div> <!-- END protocol -->
+<div class="nav">
+<a href="../../../index.html#title" title="Table of Contents">TOC</a>
+<br><a href="../../../plan/index.html#title" title="THE DETAILED PLAN TO FIX THE BROKEN">PLANS</a>
+<br><a href="conclude.html#title" title="NEXT TIME">Conclusions</a>
+<hr><a href="../../index.html#first_month" title="The First Month">FIRST</a>
+<br><a href="../11/index.html#title" title="The Previous Month">PREVIOUS</a>
+<br><a href="mailto:woodsjaya@gmail.com" title="Write Jay Woods">CONTACT</a>
+<br><a href="../../2016/01/index.html#title" title="The Next Month">NEXT</a>
+<br><a href="../../index.html#last_month" title="The Last Month">LAST</a>
+<hr>
+<hr><a href="index.html#todo" title="Beginning of Tasks To Do">To Do</a>
+<br><a href="index.html#current" title="Beginning of Active Tasks">Active</a>
+<!-- review tasks -->
+<!--
+	</div>
+<div class="nav">
+-->
+<br><a href="index.html#owr" title="ENGL 1240 Oral and Written Reports">ENGL 1240</a>
+<!--
+</div>
+	<div class="bodytext">
+-->
+<br><a href="index.html#end">End of Task</a>
+<br><a href="index.html#newestnote" title="Newest Note of Current Tasks">Newest Note</a>
+</div> <!-- END nav -->
+<div class="notes">
+    <div class="bodytext">
+<dl class="onholdtasks"><!-- sort="reverse" -->
+	<dt class="indextab"><a id="todo" href="index.html#todo">TO DO</a></dt>
+<!--
+	The first thing to do each month is for each set of notes:
+        Change $ time to a time such as 01031214.
+        Change $ full to a time such as 01 03:12:14.
+        Add the 'Continuing from' and 'Continuing at' lines along with the href of the day/time.
+        Each of the tasks are titled.
+        Each of the tasks worked on have an updated tag added in the line after the title.
+        <dd>
+Continued from <a href="../../2015/11/index.html#201511010330">2015-11-01 03:30</a>.
+		</dd><dd>This is the <a href="../../../plan/index.html#ebook">Oral and Written Reports</a>
+    project. 
+        </dd><dd class="keyword">2015-12-01 DOW.
+        </dd><dd>Oral and Written Reports <em>07:30</em>
+        
+        </dd><dd>
+Continued at <a href="../../2015/../2016/01/index.html#2015../2016/01010330">2015-../2016/01-01 03:30</a>.
+		</dd>
+-->
+<!-- Add anchors -->
+	<dt class="indextab">
+<a id="current" href="index.html#current">Active Current Tasks</a>
+	</dt>
+        <dd></dd>
+	<dt class="indextab">
+<a id="201512010330" href="../../2015/12/index.html#201512010330">2015-12-01 03:30</a>
+	</dt>
+		<dd>This is the <a href="../../../plan/index.html#INFO2635">On MySQL Programming</a>
+    project. 
+        </dd><dd class="keyword">2015-12-03 Thursday.
+        </dd><dd>Module 1 <em>07:30</em>
+		</dd><dd>
+Welcome! Welcome to your online English 1240 course. My name...
+		</dd><dd>
+Posted on: Wednesday, December 2, 2015 12:00:00 AM CST
+		</dd><dd>
+Welcome!
+		</dd><dd>
+Teacher picture 
+		</dd><dd>
+Welcome to your online English 1240 course. My name is Michelle Oswald, and 
+I will be your instructor for the course. To get started in the course you 
+might want to start with the "Getting Started" lesson under the Lessons tab.
+The Lessons tab is located up on top there right under the heading. 
+Just click on it and you should see a folder labeled "Getting Started".
+That is a great place to start. In addition, everything you need to know 
+about the course should be outlined in your syllabus that you will access 
+from the Resources tab above. It is important that you read through the 
+syllabus completely to understand how this course operates. In many cases, 
+it runs very much like a traditional course, but there are very important 
+differences that you must follow to complete and pass this course. 
+One thing that is very different online is the way you will be handing in 
+your assignments. You will hand-in everything electronically, and you must 
+hand things in on time. Deadlines are strictly enforced, and there are 
+severe penalties for handing things in late. Make sure you note all 
+deadlines ahead of time so you can prepare your schedule accordingly. 
+Notice most assignments are due by 11:59 p.m. on Mondays. You should check 
+this Homepage around three times a week for updates, added information to 
+the course content, added required assignments, and general messages from 
+me. Generally, I will update this page every Tuesday morning. I'm looking 
+forward to getting to know you and helping you learn all about the process 
+of writing and presenting reports. If you have any questions don't hesitate
+to contact me via the Mail function accessed in the Communicate tab above. 
+I am usually online between 9 a.m. and 11 a.m. weekdays.
+ 
+By this coming Monday night (Dec. 8),  you need to post two discussion 
+submissions. Complete details of these assignments are found in the course 
+content for the week found under the Lessons tab above in Module One. 
+In the First Discussion you must write an essay about yourself (I will post 
+one as well so you can learn about me too). In addition to the essay, your 
+posting should contain a statement that you read the syllabus and you agree 
+to abide by the course policies. The second posting is one dealing with 
+plagiarism. The details are outlined in the Module for the week.
+		</dd><dd>
+Okular - TENTH EDITION p 194
+
+Applying Toulmin Logic
+Because using Toulmin logic is a way of raising those questions readers may
+ask, its use will make your arguments more reader oriented. Toulmin logic
+comprises five components:
+1. Claim: the major proposition or conclusion of the argument
+2. Grounds: the evidence upon which the claim rests—facts,
+experimental research data, statements from authorities, and so forth
+3. Warrant: justification for the grounds and what makes them relevant to
+the claim
+4. Backing: further evidence for accepting the warrant
+5. Rebuttal: counterarguments; exceptions to the claim, warrant, or
+backing; or reasons for not accepting them
+
+http://www.cambridge.org/us/academic/subjects/philosophy/logic/uses-argument-2nd-edition?format=HB&isbn=9780521827485
+
+The Uses of Argument
+
+2nd Edition
+
+    Author: Stephen E. Toulmin
+
+    Date Published: July 2003
+    availability: Available
+    format: Hardback
+    length: 262 pages
+    isbn: 9780521827485
+
+[The image of the cover shows updated edition.]
+https://books.google.com/books?id=53whAwAAQBAJ&pg=PT6&dq=%22the+uses+of+argument%22+s+toulmin&lr=&source=gbs_toc_r&cad=3#v=onepage&q=%22the%20uses%20of%20argument%22%20s%20toulmin&f=false
+
+Preface to the Updated Edition
+...
+  It was, in the event, to my great advantage that <em>The Uses of 
+Argument</em> found a way so quickly into the world of Speech
+Communication. The rightly named 'analytical' philosophers in 
+the Britain and America of the 1950s quickly smelled an 
+enemy. The book was roundly damned by Peter Strawson in the 
+B.B.C.'s weekly journal, <em>The Listener</em>; and for many years
+English professional philosophers ignored it. Peter Alexander, a
+colleague at Leeds, called it 'Toulmin's <em>anti-logic</em> book', and my
+<em>Doktorvater</em> at Cambridge, Richard Braithwaite, was deeply
+pained to see one of his own students attacking his commitment
+to Inductive Logic. (I only found this out years later.)
+
+He calls it 'the Toulmin model'.
+
+http://www.prisma-statement.org/PRISMAStatement/PRISMAStatement.aspx
+Writer - PRISMA 2009 checklist
+
+http://blog.grabcad.com/blog/2015/12/11/crowdsourcing-is-not-a-threat-to-your-engineering-job/?mkt_tok=3RkMMJWWfF9wsRoiv6%2FMZKXonjHpfsX%2F6usuUa60lMI%2F0ER3fOvrPUfGjI4FTsVmI%2BSLDwEYGJlv6SgFSrDNMaps2bgJWBU%3D
+See Fear, uncertainty, doubt
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.36.6223&rep=rep1&type=pdf
+
+http://eprints.ioe.ac.uk/654/1/Erdurane2004TAPing915.pdf
+
+https://scholar.google.com/scholar?q=backing%2Bclaim%2Bdata%2Bqualifier%2Brebuttal%2Bwarrant%2Breview&btnG=&hl=en&as_sdt=0%2C5
+backing+claim+data+qualifier+rebuttal+warrant+review
+         </dd>
+         
+</dl>
+		</div> <!-- END bodytext" -->
+<dl>
+    <dt class="indextab" id="notetitle">
+<a id="newestnote" href="index.html#newestnote"></a>
+<button type="button" onclick="newNoteTitle()">New Note Title</button>
+    </dt>
+        <dd id="date">
+Started on 
+<button type="button" onclick="newDay()">New Day</button>
+        <div class="protocol">
+<a id="bod" href="index.html#bod">Morning Ritual</a>
+        </div> <!-- END protocol -->
+<button type="button" onclick="newTime()">New Time</button>
+        </dd><dd>
+        <div class="protocol">
+Update with the new note protocol.
+        </div> <!-- END protocol -->
+        </dd><dd id="note">
+        </dd><dd>
+<button type="button" onclick="newNote()">New Note</button>
+        </dd>
+</dl>
+    </div> <!-- END notes -->
+<script>
+function newDay() 
+{
+    document.getElementById("date").innerHTML = Date();
+}
+function newTime() 
+{
+    document.getElementById("date").innerHTML = Date();
+}
+function newNoteTitle() 
+{
+    document.getElementById("notetitle").innerHTML = 
+    "New note title now inserted in reverse sort order";
+}
+function newNote() 
+{
+    document.getElementById("note").innerHTML = 
+    "New note text inserted and now previous note.";
+}
+</script>
+  </body>
+</html>
